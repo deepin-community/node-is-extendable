@@ -1,0 +1,27 @@
+Description: fix for node-is-extendable > 5
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: no
+Last-Update: 2020-12-15
+
+--- a/index.js
++++ b/index.js
+@@ -7,7 +7,7 @@
+ 
+ 'use strict';
+ 
+-var isPlainObject = require('is-plain-object');
++var { isPlainObject } = require('is-plain-object');
+ 
+ module.exports = function isExtendable(val) {
+   return isPlainObject(val) || typeof val === 'function' || Array.isArray(val);
+--- a/package.json
++++ b/package.json
+@@ -22,7 +22,7 @@
+     "test": "mocha"
+   },
+   "dependencies": {
+-    "is-plain-object": "^2.0.4"
++    "is-plain-object": "^5.0.0"
+   },
+   "devDependencies": {
+     "gulp-format-md": "^1.0.0",

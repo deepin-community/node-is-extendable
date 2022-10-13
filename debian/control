@@ -1,0 +1,27 @@
+Source: node-is-extendable
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , mocha <!nocheck>
+ , node-is-plain-object (>= 5.0.0~) <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-is-extendable
+Vcs-Git: https://salsa.debian.org/js-team/node-is-extendable.git
+Homepage: https://github.com/jonschlinkert/is-extendable
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-is-extendable
+Architecture: all
+Depends: ${misc:Depends}
+ , node-is-plain-object (>= 5.0.0~)
+ , nodejs
+Description: determine if a value can be extended
+ Returns true if a value is any of the object types: array, regexp, plain
+ object, function or date. This is useful for determining if a value can be
+ extended, e.g. "can the value have keys?"
+ .
+ Node.js is an event-based server-side JavaScript engine.

@@ -1,0 +1,47 @@
+node-is-extendable (1.0.1-3) unstable; urgency=medium
+
+  * Team upload
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Sat, 06 Nov 2021 15:41:46 +0100
+
+node-is-extendable (1.0.1-2) experimental; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs auto test & install
+  * Add fix for node-is-plain-object ≥ 5
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 15 Dec 2020 08:53:47 +0100
+
+node-is-extendable (1.0.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * Update Vcs fields for migration to https://salsa.debian.org/
+  * Bump standard version
+  * Bump debhelper compat
+  * New upstream version
+  * Update copyright and dependencies
+
+ -- Paolo Greppi <paolo.greppi@libpf.com>  Mon, 23 Apr 2018 15:44:50 +0200
+
+node-is-extendable (0.1.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #840990)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 16 Oct 2016 22:57:51 +0530
